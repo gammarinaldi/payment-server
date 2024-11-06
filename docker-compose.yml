@@ -1,0 +1,19 @@
+services:
+  payment-server:
+    build: .
+    environment:
+      - PORT=${PORT}
+      - MONGODB_URI=${MONGODB_URI}
+      - MIDTRANS_SECRET=${MIDTRANS_SECRET}
+      - NEXT_PUBLIC_ALYSA=${NEXT_PUBLIC_ALYSA}
+    volumes:
+      - ./logs:/usr/src/app/logs
+    restart: unless-stopped
+    ports:
+      - 4000:4000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
