@@ -1,5 +1,5 @@
 
-## payment Server
+## Payment Server
 
 This project provides a basic framework for building a payment server using Node.js. 
 It handles payment process, credit top up, and other payment related features for multiple apps/SaaS with only one payment gateway account.
