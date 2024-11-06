@@ -19,7 +19,6 @@ It handles payment process, credit top up, and other payment related features fo
     ```
     git clone https://github.com/gammarinaldi/payment-server.git
     npm install
-    
     ```
     
 
@@ -31,7 +30,6 @@ It handles payment process, credit top up, and other payment related features fo
     
     ```
     npm run dev
-    
     ```
     
     This will typically start the server on port `4000` by default. You can customize the port by modifying the server code.
